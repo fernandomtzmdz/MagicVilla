@@ -10,6 +10,8 @@ namespace MagicVilla_API.Datos
 
         //aquí le indicamos a la base de datos que debe tomar la clase Villa para crear la tabla Villas dentro de SQLServer
         public DbSet<Villa> Villas { get; set; }
+        //con esto creamos la nueva tabla en la base de datos (similar a la línea anterior)
+        public DbSet<NumeroVilla> NumeroVillas { get; set; }
 
         //agregamos nuevos registros a la tabla Villas en la bd de sql
         protected override void OnModelCreating(ModelBuilder modelBuilder)
